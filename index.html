@@ -14,14 +14,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Dashboard</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-    </style>
   </head>
 
   <body>
@@ -31,60 +25,122 @@
       >
         <div class="brandName flex items-center pb-8 text-2xl font-bold">
           <div class="logo ml-1 mr-4">
-            <i class="fa-sharp fa-solid fa-bullseye"></i>
+            <a href="#"><i class="fa-sharp fa-solid fa-bullseye"></i></a>
           </div>
           <div class="brand">Dashboard</div>
         </div>
 
         <div class="sb__topLinks pb-8">
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-house"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </div>
             <div>Home</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-address-card"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-address-card"></i></a>
+            </div>
             <div>Profile</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-message"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-message"></i></a>
+            </div>
             <div>Messages</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-clock"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-clock"></i></a>
+            </div>
             <div>History</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-file"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-file"></i></a>
+            </div>
             <div>Tasks</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-user-group"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-user-group"></i></a>
+            </div>
             <div>Communities</div>
           </div>
         </div>
 
         <div class="sb__bottomLinks">
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-gear"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-gear"></i></a>
+            </div>
             <div>Settings</div>
           </div>
           <div class="flex items-center p-1">
             <div class="mr-4">
-              <i class="fa-sharp fa-solid fa-circle-question"></i>
+              <a href="#"
+                ><i class="fa-sharp fa-solid fa-circle-question"></i
+              ></a>
             </div>
             <div>Support</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4"><i class="fa-solid fa-shield"></i></div>
+            <div class="mr-4">
+              <a href="#"><i class="fa-solid fa-shield"></i></a>
+            </div>
             <div>Privacy</div>
           </div>
         </div>
       </div>
 
-      <header class="header col-start-2 col-end-3 bg-green-500">header</header>
+      <header class="header col-start-2 col-end-3 py-4 px-8 shadow-lg border">
+        <div class="h__top flex justify-between">
+          <div class="top__left flex items-center">
+            <div>
+              <i class="fa-solid fa-search"></i>
+            </div>
+            <div>
+              <input
+                type="text"
+                class="bg-slate-300 outline-none px-3 py-1 rounded-2xl ml-4 w-[30rem]"
+              />
+            </div>
+          </div>
 
-      <main class="mainContent col-start-2 col-end-3 bg-blue-500">
-        mainContent
+          <div class="top__right flex items-center space-x-6">
+            <div><i class="fa-regular fa-bell"></i></div>
+            <div>
+              <img src="imgs/avator.png" alt="avator" class="w-8 rounded-2xl" />
+            </div>
+            <div class="font-bold">Numan Iftikhar</div>
+          </div>
+        </div>
+
+        <div class="h__bottom flex justify-between mt-6">
+          <div class="flex space-x-4">
+            <div>
+              <img
+                src="imgs/avator.png"
+                alt="avator"
+                class="avator w-12 rounded-3xl"
+              />
+            </div>
+            <div class="font-bold">
+              <h3 class="text-sm">Hi there,</h3>
+              <h2>Numan Iftikhar (@numan)</h2>
+            </div>
+          </div>
+
+          <div class="right space-x-4">
+            <button class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1">New</button>
+            <button class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1">Upload</button>
+            <button class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1">Share</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="mainContent col-start-2 col-end-3 bg-slate-300">
+        
       </main>
 
       <footer
