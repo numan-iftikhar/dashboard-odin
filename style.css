@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sb__topLinks>div{
+    cursor: pointer;
+}
+.sb__topLinks>div:hover{
+    background-color: blue;
+    border-radius: 4px;
+}
+.sb__bottomLinks>div{
+    cursor: pointer;
+}
+.sb__bottomLinks>div:hover{
+    background-color: blue;
+    border-radius: 4px;
+}
