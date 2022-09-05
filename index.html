@@ -19,10 +19,9 @@
   </head>
 
   <body>
-    <div class="grid grid-cols-1 sm:grid-cols-[1fr_4fr] sm:grid-rows-3">
-      <div
-        class="sidebar row-span-full p-5 bg-blue-500 text-white text-md font-semibold h-screen"
-      >
+    <div class="grid grid-cols-1 sm:grid-cols-[1fr_4fr]">
+      <!-- sidebar section -->
+      <div class="sidebar p-5 bg-blue-500 text-white text-md font-semibold">
         <div class="brandName flex items-center pb-8 text-2xl font-bold">
           <div class="logo ml-1 mr-4">
             <a href="#"><i class="fa-sharp fa-solid fa-bullseye"></i></a>
@@ -93,61 +92,94 @@
         </div>
       </div>
 
-      <header class="header col-start-2 col-end-3 py-4 px-8 shadow-lg border">
-        <div class="h__top flex justify-between">
-          <div class="top__left flex items-center">
-            <div>
-              <i class="fa-solid fa-search"></i>
+      <!-- main right side -->
+      <div class="col-start-2 col-end-3">
+        <!-- header -->
+        <header class="header shadow-lg border border-b-black h-36 py-4 px-8">
+          <div class="h__top flex justify-between">
+            <div class="top__left flex items-center">
+              <div>
+                <i class="fa-solid fa-search"></i>
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="bg-slate-300 outline-none px-3 py-1 rounded-2xl ml-4 w-[30rem]"
+                />
+              </div>
             </div>
-            <div>
-              <input
-                type="text"
-                class="bg-slate-300 outline-none px-3 py-1 rounded-2xl ml-4 w-[30rem]"
-              />
+
+            <div class="top__right flex items-center space-x-6">
+              <div><i class="fa-regular fa-bell"></i></div>
+              <div>
+                <img
+                  src="imgs/avator.png"
+                  alt="avator"
+                  class="w-8 rounded-2xl"
+                />
+              </div>
+              <div class="font-bold">Numan Iftikhar</div>
             </div>
           </div>
 
-          <div class="top__right flex items-center space-x-6">
-            <div><i class="fa-regular fa-bell"></i></div>
-            <div>
-              <img src="imgs/avator.png" alt="avator" class="w-8 rounded-2xl" />
+          <div class="h__bottom flex justify-between mt-6">
+            <div class="flex space-x-4">
+              <div>
+                <img
+                  src="imgs/avator.png"
+                  alt="avator"
+                  class="avator w-12 rounded-3xl"
+                />
+              </div>
+              <div class="font-bold">
+                <h3 class="text-sm">Hi there,</h3>
+                <h2>Numan Iftikhar (@numan)</h2>
+              </div>
             </div>
-            <div class="font-bold">Numan Iftikhar</div>
-          </div>
-        </div>
 
-        <div class="h__bottom flex justify-between mt-6">
-          <div class="flex space-x-4">
-            <div>
-              <img
-                src="imgs/avator.png"
-                alt="avator"
-                class="avator w-12 rounded-3xl"
-              />
+            <div class="right space-x-4">
+              <button
+                class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1"
+              >
+                New
+              </button>
+              <button
+                class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1"
+              >
+                Upload
+              </button>
+              <button
+                class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1"
+              >
+                Share
+              </button>
             </div>
-            <div class="font-bold">
-              <h3 class="text-sm">Hi there,</h3>
-              <h2>Numan Iftikhar (@numan)</h2>
-            </div>
           </div>
-
-          <div class="right space-x-4">
-            <button class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1">New</button>
-            <button class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1">Upload</button>
-            <button class="hover:bg-blue-600 bg-blue-500 text-white w-20 rounded-2xl py-1">Share</button>
-          </div>
-        </div>
-      </header>
-
-      <main class="mainContent col-start-2 col-end-3 bg-slate-300">
+        </header>
         
-      </main>
+        <!-- main content section -->
+        <main class="mainContent py-8 px-4 grid grid-col-3 bg-slate-200">
+          <!-- projects -->
+          <div class="col-start-1 col-end-3 grid grid-cols-2">
+            <div class="projectCard shadow-lg">project</div>
+            <div class="projectCard shadow-lg">project</div>
+            <div class="projectCard shadow-lg">project</div>
+            <div class="projectCard shadow-lg">project</div>
+            <div class="projectCard shadow-lg">project</div>
+            <div class="projectCard shadow-lg">project</div>
+          </div>
 
-      <footer
-        class="bg-slate-100 h-14 mt-auto pt-3 col-start-2 col-end-3 text-center"
-      >
-        copyright &copy; odin project
-      </footer>
+          <!-- announcements and trending section -->
+          <div class="border bg-red-500 col-start-3 col-end-4"></div>
+        </main>
+
+
+        <footer
+          class="bg-slate-100 h-14 mt-auto pt-3 col-start-2 col-end-3 text-center"
+        >
+          copyright &copy; odin project
+        </footer>
+      </div>
     </div>
   </body>
 </html>
