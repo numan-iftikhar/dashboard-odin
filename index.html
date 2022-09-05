@@ -4,58 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Dashboard</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="grid grid-cols-1 sm:grid-cols-[1fr_4fr] sm:grid-rows-3 gap-5">
-
-      <div class="sidebar row-span-full p-4 bg-blue-500 text-white h-screen border">
-        <div class="brandName flex items-center pb-8">
-          <div class="logo">logo icon</div>
+    <div class="grid grid-cols-1 sm:grid-cols-[1fr_4fr] sm:grid-rows-3">
+      <div
+        class="sidebar row-span-full p-5 bg-blue-500 text-white text-md font-semibold h-screen"
+      >
+        <div class="brandName flex items-center pb-8 text-2xl font-bold">
+          <div class="logo ml-1 mr-4">
+            <i class="fa-sharp fa-solid fa-bullseye"></i>
+          </div>
           <div class="brand">Dashboard</div>
         </div>
 
         <div class="sb__topLinks pb-8">
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-house"></i></div>
             <div>Home</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-address-card"></i></div>
             <div>Profile</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-message"></i></div>
             <div>Messages</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-clock"></i></div>
             <div>History</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-file"></i></div>
             <div>Tasks</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-user-group"></i></div>
             <div>Communities</div>
           </div>
         </div>
 
-
         <div class="sb__bottomLinks">
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-gear"></i></div>
             <div>Settings</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-sharp fa-solid fa-circle-question"></i></div>
             <div>Support</div>
           </div>
           <div class="flex items-center p-1">
-            <div class="mr-4">link icon</div>
+            <div class="mr-4"><i class="fa-solid fa-shield"></i></div>
             <div>Privacy</div>
           </div>
         </div>
@@ -66,7 +84,11 @@
       <main class="mainContent col-start-2 col-end-3 bg-blue-500">
         mainContent
       </main>
-      <footer class="bg-fuchsia-500 col-start-2 col-end-3 text-center">footer</footer>
+
+
+      <footer class="bg-slate-100 h-14 mt-auto pt-3 col-start-2 col-end-3 text-center">
+        copyright &copy; odin project
+      </footer>
     </div>
   </body>
 </html>
