@@ -18,7 +18,7 @@
   border-radius: 4px;
 }
 .mainContent .projectCard {
-  height: 12rem;
+  height: auto;
   background-color: white;
   border-radius: 8px;
   margin: 1rem;
