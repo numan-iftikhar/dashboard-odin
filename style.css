@@ -27,7 +27,7 @@
 }
 
 .mainContent .card {
-  height: 42%;
+  height: auto;
   background-color: white;
   margin: 1rem;
   padding: 1rem;
